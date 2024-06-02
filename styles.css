@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+div{
+    display: block;
+}
+
+body{
+    display: block;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#grad{
+    background: -webkit-linear-gradient(#95eddc, #ed55b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer{
+    background-image: linear-gradient(93deg, #95eddc, #ed55b0);
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-around;
+}
+#rew{
+    background: -webkit-linear-gradient(#95eddc, #ed55b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.navbar1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 1038;
+}
+
+.navbar1.scrolled{
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+    background-image: linear-gradient(93deg, #95eddc, #ed55b0);
+}
+
+.one{
+    width: 40%;
+    font-size: 32px;
+    padding: 0 6px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+.one a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+.two{
+    width: 60%;
+    padding: 0 20px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding-left: 50px;
+}
+
+.two a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 785px){
+    .two{
+        display: none;
+    }
+}
+
+.back-img{
+    background-image: url(./images/landing.jpg);
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opaque{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #571993 0%, #0068ac 100%);
+    opacity: .92;
+    z-index: inherit;
+}
+
+.fbox{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding: 160px 40px;
+}
+
+.ffbox{
+    
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.fsbox{
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    min-width: 200px;
+    border-radius: 10px;
+    padding: 22px;
+    max-width: 350px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ffbox1{
+    color: white;
+    margin: 20px;
+}
+
+.ffbox2{
+    color: white;
+    margin: 0 20px;
+}
+
+.fsbox1{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fsbox1 h2{
+    margin-top: 20px;
+}
+
+.fsbox2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fsbox2 input{
+    width: 100%;
+    height: 40px;
+    padding: 12px 16px;
+    margin: 5px 0;
+}
+
+.fsbox2 button{
+    height: 40px;
+    background-color: #26D765;
+    color: white;
+    font-size: 16px;
+    font: Arial;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+}
+
+.wave-shape{
+    background-color: transparent;
+    position: relative;
+    margin-top: -160px;
+    width: 100%;
+    z-index: 1;
+}
+
+.wave-shape img{
+    width: 100%;
+
+}
+
+@media screen and (max-width: 767px){
+    .fbox{
+        padding: 120px 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .wave-shape{
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px){
+    .wave-shape{
+        margin-top: -90px;
+    }
+    
+}
+
+@media screen and (max-width: 560px){
+    .fbox{
+        flex-wrap: wrap;
+    }
+    .ffbox{
+        width: 100%;
+    }
+    .fsbox{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 20px;
+    }
+}
+
+.sec-bg-lgray{
+    background-color: #f9f8ff;
+}
+
+.bg-lgray-padd{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px){
+    .bg-lgray-padd{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.sec-header {
+    font-family: graphikweb-medium;
+    display: flex;
+    font-weight: 500;
+    color: #000;
+    justify-content: center;
+    word-spacing: .9px;
+}
+
+
+
+.whyob-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+@media screen and (max-width: 991px) {
+    .whyob-row {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+}
+
+.whyob-row .card {
+    display: flex;
+    flex: 0 0 auto;
+    width: 33.33%;
+    padding: 8px;
+    border: 0;
+    background: transparent;
+}
+
+@media screen and (max-width: 991px) {
+    .whyob-row .card {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+.whyob-row .card .card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 25px 32px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .whyob-row .card .card-inner {
+        padding: 20px 16px;
+        border-radius: 10px;
+    }
+}
+
+.whyob-row .card .card-inner span {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .whyob-row .card .card-inner span {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 12px;
+    }
+}
+
+.whyob-row .card .card-inner h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .whyob-row .card .card-inner h3 {
+        margin-bottom: 8px;
+    }
+}
+
+.whyob-row .card .card-inner p {
+    color: #474d5c;
+    margin-bottom: 0;
+    text-align: center;
+}
+@media screen and (max-width: 1400px) {
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .h320{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .p16 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .h320{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .p16{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .h320{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1, h2, .h236, h3, h4, h5, h6, p, .p14, .p16 {
+        margin-bottom: 10px;
+    }
+}
+
+.edtable{
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    margin-bottom: 18px;
+}
+
+.edtable td {
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #22252f;
+    line-height: 20px;
+    text-align: left;
+}
+
+.edtable th {
+    padding: 16px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #22252f;
+    line-height: 20px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.edcontent p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #22252f;
+}
+
+.outer-box{
+    
+}
+
+.box{
+    
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.inner1{
+    padding: 20px;
+    min-width: 300px;
+    color: black;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+.inner1 h3{
+    font-family: "Cedarville Cursive", cursive;
+    color: black;
+}
+
+.prizes{
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    font-family: "Cedarville Cursive", cursive;
+    color: black;
+}
